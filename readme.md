@@ -24,4 +24,7 @@ the parsing stops. If it ends with `last`, the parsing starts again from
 the top using the new url. If no flag is used, it continue to the next
 matching rule.
  
+### TODO
 
+- 301 redirect still returns a body with the nginx version name
+- headers server type nginx

@@ -1,0 +1,11 @@
+#!/usr/bin/env zsh
+DIR="$( cd "$( dirname "$0" )" && pwd )"
+cd $DIR
+
+sudo rsync -vahP \
+  ../conf \
+  ../nginx.conf \
+  ../sites-enabled \
+  ../sites-available \
+  pixelastic:/etc/nginx
+
